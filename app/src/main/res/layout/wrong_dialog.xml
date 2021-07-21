@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:padding="30dp"
+    android:background="@drawable/worngbg"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_wrong"/>
+    <TextView
+        android:id="@+id/text_correct_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct Ans: \n"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:padding="20dp"
+        />
+    <Button
+        android:id="@+id/bt_wrong_dialog"
+        android:layout_width="wrap_content"
+        android:background="@drawable/wrongdialog"
+        android:text="OK"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        />
+</LinearLayout>

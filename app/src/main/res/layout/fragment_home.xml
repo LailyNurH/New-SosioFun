@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_dashboard"
+    tools:context=".fragment.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/course" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Hey,"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="What would you like to\nlearn today ?"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <RelativeLayout
+        android:id="@+id/s"
+        android:layout_width="380dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp">
+
+        <include layout="@layout/slider_main" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txcourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="My Course"
+        android:textColor="#575757"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txsee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="See All"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/s"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentEnd="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txcourse">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp">
+
+
+            <!--            Baris1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/ma1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/m1"
+                        android:layout_width="155dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/materi1" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ma2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/m2"
+                        android:layout_width="163dp"
+                        android:layout_height="167dp"
+                        android:background="@drawable/materi2" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--            Baris2-->
+            <LinearLayout
+                android:layout_marginTop="-30dp"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/ma3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                    <ImageView
+                        android:id="@+id/m3"
+                        android:layout_width="150dp"
+                        android:layout_height="159dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/materi3" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ma4"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView6"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                    <ImageView
+                        android:id="@+id/m4"
+                        android:layout_width="163dp"
+                        android:layout_height="198dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/materi4" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--            Baris3-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/ma5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/m5"
+                        android:layout_width="150dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/materi5" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ma6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/m6"
+                        android:layout_width="163dp"
+                        android:layout_height="167dp"
+                        android:background="@drawable/materi6" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--            Baris4-->
+            <LinearLayout
+                android:layout_marginTop="-30dp"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/ma7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                    <ImageView
+                        android:id="@+id/m7"
+                        android:layout_width="150dp"
+                        android:layout_height="159dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/materi7" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ma8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView6"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                    <ImageView
+                        android:id="@+id/m8"
+                        android:layout_width="163dp"
+                        android:layout_height="198dp"
+                        android:background="@drawable/materi8" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <!--            Baris5-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/ma9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/m9"
+                        android:layout_width="150dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/materi9" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ma10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageButton
+                        android:id="@+id/m10"
+                        android:layout_width="163dp"
+                        android:layout_height="167dp"
+                        android:background="@drawable/materi10" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--            Baris2-->
+            <LinearLayout
+                android:layout_marginTop="-30dp"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/ma11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                    <ImageView
+                        android:id="@+id/m11"
+                        android:layout_width="150dp"
+                        android:layout_height="159dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/materi11" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ma12"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView6"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                    <ImageView
+                        android:id="@+id/m12"
+                        android:layout_width="163dp"
+                        android:layout_height="198dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/materi12" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--            Baris3-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/ma13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/m13"
+                        android:layout_width="150dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/materi5" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ma14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/m14"
+                        android:layout_width="163dp"
+                        android:layout_height="167dp"
+                        android:background="@drawable/materi14" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--            Baris4-->
+            <LinearLayout
+                android:layout_marginTop="-30dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/ma15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                    <ImageView
+                        android:id="@+id/m15"
+                        android:layout_width="150dp"
+                        android:layout_height="159dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/materi15" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ma16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView6"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                    <ImageView
+                        android:id="@+id/m16"
+                        android:layout_width="163dp"
+                        android:layout_height="198dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/materi16" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

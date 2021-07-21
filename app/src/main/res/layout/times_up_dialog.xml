@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_margin="20dp"
+        android:layout_width="270dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:background="@drawable/timesup"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Times Up"
+        android:fontFamily="@font/sairabold"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:padding="20dp"/>
+    <Button
+        android:id="@+id/bt_timer"
+        android:layout_width="wrap_content"
+        android:background="#0898B2"
+        android:text="OK"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
