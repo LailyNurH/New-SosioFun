@@ -12,7 +12,7 @@ import android.webkit.WebViewClient;
 import com.laily.newproject.R;
 
 public class Materi1Activity extends AppCompatActivity {
-    private WebView web;
+    private WebView materi1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class Materi1Activity extends AppCompatActivity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
-        WebView materi1 = (WebView) findViewById(R.id.materi1);
+        materi1 = findViewById(R.id.materi1);
         materi1.getSettings().setLoadsImagesAutomatically(true);
         materi1.getSettings().setJavaScriptEnabled(true);
         materi1.getSettings().setDomStorageEnabled(true);
@@ -40,12 +40,12 @@ public class Materi1Activity extends AppCompatActivity {
 
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        if (web.canGoBack()) {
-//            web.goBack();
-//        } else {
-//            super.onBackPressed();
-//        }
-//    }
+    @Override
+    public void onBackPressed() {
+        if (materi1.canGoBack()) {
+            materi1.goBack();
+        } else {
+            super.onBackPressed();
+        }
+    }
 }

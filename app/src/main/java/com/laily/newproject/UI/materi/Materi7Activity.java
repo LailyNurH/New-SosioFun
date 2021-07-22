@@ -21,7 +21,7 @@ public class Materi7Activity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
 
-        WebView materi7 = (WebView) findViewById(R.id.materi7);
+        materi7 = findViewById(R.id.materi7);
         materi7.getSettings().setLoadsImagesAutomatically(true);
         materi7.getSettings().setJavaScriptEnabled(true);
         materi7.getSettings().setDomStorageEnabled(true);

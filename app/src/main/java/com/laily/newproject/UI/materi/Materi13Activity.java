@@ -20,7 +20,7 @@ public class Materi13Activity extends AppCompatActivity {
         setContentView(R.layout.activity_materi13);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
-        WebView materi13 = (WebView) findViewById(R.id.materi13);
+     materi13 = findViewById(R.id.materi13);
         materi13.getSettings().setLoadsImagesAutomatically(true);
         materi13.getSettings().setJavaScriptEnabled(true);
         materi13.getSettings().setDomStorageEnabled(true);
