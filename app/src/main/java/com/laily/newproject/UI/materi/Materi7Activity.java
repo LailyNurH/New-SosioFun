@@ -34,7 +34,7 @@ public class Materi7Activity extends AppCompatActivity {
         // Baris di bawah untuk menambahkan scrollbar di dalam WebView-nya
         materi7.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         materi7.setWebViewClient(new WebViewClient());
-        materi7.loadUrl("https://flipbox.000webhostapp.com/materi7/mobile/index.html");
+        materi7.loadUrl("https://hamidahlaily.github.io/materi7/mobile/index.html");
         WebSettings webSettings = materi7.getSettings();
         webSettings.setJavaScriptEnabled(true);
 

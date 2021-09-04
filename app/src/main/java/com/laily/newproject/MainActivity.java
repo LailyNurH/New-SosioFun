@@ -13,6 +13,7 @@ import android.view.WindowManager;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 import com.laily.newproject.fragment.EbookFragment;
 import com.laily.newproject.fragment.HomeFragment;
+import com.laily.newproject.fragment.ProfileFragment;
 import com.laily.newproject.fragment.QuizFragment;
 import com.laily.newproject.fragment.VideoFragment;
 
@@ -28,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
         BottomNav = findViewById(R.id.bottomBar);
         if (savedInstanceState == null) {
@@ -58,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.item4:
                         fragment = new VideoFragment();
+                        break;
+                    case R.id.item5:
+                        fragment = new ProfileFragment();
                         break;
                 }
                 if (fragment != null) {
